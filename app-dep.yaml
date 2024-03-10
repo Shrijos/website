@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-dep
+  name: app-dep-new
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: customapp
+      app: newcustomapp  # Change to a new label
   template:
     metadata:
       labels:
-        app: customapp
+        app: newcustomapp  # Change to a new label
     spec:
       containers:
       - name: nginx
